@@ -2,8 +2,8 @@ package com.cbfacademy.accounts;
 
 public class Account {
 
-    private int accountNumber;
-    private double balance;
+    public int accountNumber;
+    public double balance;
     
     public Account(int accountNumber, double balance) {
         this.accountNumber = accountNumber;
@@ -35,6 +35,10 @@ public class Account {
         } else {
             return 0;
         }
+    }
+
+    public String toString() {
+        return "Account no: " + accountNumber + " , Balance: £" + String.format("%2f", balance);
     }
 
 

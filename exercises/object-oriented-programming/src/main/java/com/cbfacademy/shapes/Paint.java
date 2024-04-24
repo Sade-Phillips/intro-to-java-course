@@ -9,6 +9,8 @@ public class Paint {
     } 
 
     public double getAmount(Shape shape) {
-        return shape.getArea() * coverage;
+        double area = shape.getArea();
+        double gallonsNeeded = area /coverage;
+        return gallonsNeeded;
     }
 }

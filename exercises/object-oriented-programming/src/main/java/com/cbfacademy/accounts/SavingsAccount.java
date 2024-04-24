@@ -19,7 +19,10 @@ public class SavingsAccount extends Account {
     }
 
     public void setInterestRate(double newInterestRate) { 
-        this.interestRate = newInterestRate;  
+        if(newInterestRate >= 0) {
+            this.interestRate = newInterestRate; 
+        }
+         
     }
 }
 
